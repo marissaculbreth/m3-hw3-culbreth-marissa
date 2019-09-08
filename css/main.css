@@ -1,0 +1,38 @@
+div .header .row {
+  color: #080801;
+  background-color: #f8df1f;
+  display: inline !important;
+  list-style-type: none !important;
+  margin: auto;
+  padding: 1.5%;
+}
+.hero::before {
+  background-size: cover;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+h1 {
+  text-align: center;
+}
+.hero-image {
+  opacity: .33;
+}
+h1,
+h2,
+p,
+button {
+  font-family: 'Roboto', sans-serif;
+}
+button {
+  background-color: #f8df1f;
+  font-size: 18px;
+  color: #050500;
+  weight: 500;
+  border-radius: 8px;
+  padding: 1%;
+}
