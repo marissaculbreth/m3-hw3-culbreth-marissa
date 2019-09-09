@@ -1,23 +1,14 @@
-div .header .row {
-  color: #080801;
+.header {
   background-color: #f8df1f;
-  display: inline !important;
-  list-style-type: none !important;
-  margin: auto;
-  padding: 1.5%;
+  padding: 3%;
+  top: 0;
 }
-body {
-  background-color: #f8df1f;
-}
-.hero::before {
-  background-size: cover;
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
+nav ul li {
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  padding: 2%;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 h1 {
   text-align: center;
@@ -31,6 +22,17 @@ p,
 button {
   font-family: 'Roboto', sans-serif;
 }
+.first {
+  background-color: white;
+}
+table {
+  font-family: 'Roboto', sans-serif;
+  padding: 5%;
+}
+th,
+td {
+  padding: 1%;
+}
 button {
   background-color: #f8df1f;
   font-size: 18px;
@@ -39,11 +41,23 @@ button {
   border-radius: 8px;
   padding: 1%;
 }
-img .images {
-  width: 10%;
+.container {
+  width: 100%;
 }
 span {
   color: #ee252f;
+}
+.first {
+  padding: 5%;
+}
+.second {
+  background-color: lightgrey;
+  padding: 5%;
+}
+th {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  width: 50%;
 }
 footer {
   background-color: #080801;
@@ -52,4 +66,5 @@ footer {
   display: block;
   margin: auto;
   padding: 1%;
+  z-index: auto;
 }

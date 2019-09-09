@@ -1,31 +1,22 @@
 @import "variables";
 
-div {
-  .header {
-    .row {
-      color: @black;
-      background-color: @yellow;
-      display: inline !important;
-      list-style-type: none !important;
-      margin: auto;
-      padding: 1.5%;
+
+.header {
+  background-color: @yellow;
+  padding: 3%;
+  top: 0;
+}
+
+nav {
+  ul {
+    li {
+      display: inline;
+      font-family: @font-family;
+      padding: 2%;
+      margin-bottom: @padding;
+      margin-top: @padding;
     }
   }
-}
-
-body {
-  background-color: @yellow;
-}
-
-.hero::before {
-  background-size: cover;
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
 }
 
 h1 {
@@ -40,6 +31,19 @@ h1, h2, p, button {
   font-family: @font-family;
 }
 
+.first {
+  background-color: white;
+}
+
+table {
+  font-family: @font-family;
+  padding: @padding;
+}
+
+th, td {
+  padding: 1%;
+}
+
 button {
   background-color: @yellow;
   font-size: @button-size;
@@ -49,12 +53,27 @@ button {
   padding: 1%;
 }
 
-img .images {
-  width: 10%;
+.container {
+  width: 100%;
 }
 
 span {
   color: @red;
+}
+
+.first {
+  padding: @padding;
+}
+
+.second {
+  background-color: lightgrey;
+  padding: @padding;
+}
+
+th {
+  font-family: @font-family;
+  font-size: @heading-size;
+  width: 50%;
 }
 
 footer {
@@ -65,4 +84,5 @@ footer {
   display: block;
   margin: auto;
   padding: 1%;
+  z-index: auto;
 }
