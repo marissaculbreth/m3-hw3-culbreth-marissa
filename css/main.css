@@ -6,6 +6,9 @@ div .header .row {
   margin: auto;
   padding: 1.5%;
 }
+body {
+  background-color: #f8df1f;
+}
 .hero::before {
   background-size: cover;
   content: "";
@@ -34,5 +37,19 @@ button {
   color: #050500;
   weight: 500;
   border-radius: 8px;
+  padding: 1%;
+}
+img .images {
+  width: 10%;
+}
+span {
+  color: #ee252f;
+}
+footer {
+  background-color: #080801;
+}
+.logo {
+  display: block;
+  margin: auto;
   padding: 1%;
 }
