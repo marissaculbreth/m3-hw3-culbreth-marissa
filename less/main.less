@@ -1,10 +1,15 @@
 @import "variables";
 
 
-.header {
+.nav {
   background-color: @yellow;
   padding: 3%;
   top: 0;
+}
+
+header {
+  background-image: url(../img/banner-bg.png);
+  height: 450px;
 }
 
 nav {
@@ -23,8 +28,11 @@ h1 {
   text-align: center;
 }
 
-.hero-image {
-  opacity: .33;
+.hero-logo, .hero-button {
+  display: block;
+  margin: auto;
+  width: 30%;
+  top: 50%;
 }
 
 h1, h2, p, button {
@@ -46,7 +54,7 @@ th, td {
 
 button {
   background-color: @yellow;
-  font-size: @button-size;
+  font-size: 12px;
   color: @color;
   weight: @weight;
   border-radius: @border;
@@ -72,8 +80,12 @@ span {
 
 th {
   font-family: @font-family;
-  font-size: @heading-size;
+  font-size: 15px;
   width: 50%;
+}
+
+td {
+  font-size: 10px;
 }
 
 footer {
@@ -84,5 +96,38 @@ footer {
   display: block;
   margin: auto;
   padding: 1%;
-  z-index: auto;
+  width: 20%;
 }
+
+
+/* ----- START 560PX MEDIA QUERY ----- */
+@media (min-width: 560px) {
+  button {
+    font-size: 15px;
+  }
+  th {
+    font-size: 20px;
+  }
+  td {
+    font-size: 15px;
+  }
+}
+/* ----- END 560PX MEDIA QUERY ----- */
+
+
+
+/* ----- START 1000PX MEDIA QUERY ----- */
+@media (min-width: 1000px) {
+  button {
+    font-size: @button-size;
+  }
+  th {
+    font-size: @heading-size;
+  }
+  td {
+    font-size: @p-size;
+  }
+
+
+}
+/* ----- END 1000PX MEDIA QUERY ----- */
